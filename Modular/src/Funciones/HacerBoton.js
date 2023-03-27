@@ -4,7 +4,7 @@ window.BotonFooter = {
         boton.setAttribute('id', id);
         boton.setAttribute('class', 'btn btn-outline-light');
         boton.setAttribute('type', 'button');
-        boton.setAttribute('onclick', 'location.href=' + direccion );
+        boton.setAttribute('onclick', "location.href='" + direccion + "'");
         boton.textContent = texto;
 
         boton.style.backgroundColor = "white";
@@ -18,10 +18,26 @@ window.BotonFooter = {
         boton.style.textAlign = "center";
         boton.style.height = "50px";
         boton.style.width = "200px";
-        boton.style.position = "absolute";
+
+        // Agregar regla CSS para el efecto hover
+        boton.style.cursor = "pointer";
+        boton.style.backgroundRepeat = "no-repeat";
+        boton.style.backgroundPosition = "center";
+
+        boton.addEventListener("mouseenter", function() {
+            boton.style.color = "white";
+            boton.style.backgroundColor = "#2196F3";
+            boton.style.borderColor = "#2196F3";
+        });
+
+        boton.addEventListener("mouseleave", function() {
+            boton.style.color = "#2196F3";
+            boton.style.backgroundColor = "white";
+            boton.style.borderColor = "#2196F3";
+        });
 
         document.getElementById(parent).appendChild(boton);
 
-        return boton;
+        return null;
     }
 }
