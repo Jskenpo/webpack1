@@ -1,10 +1,10 @@
 window.BotonFooter = {
     botonTransferencia: function (texto, id, direccion, parent) {
-        const boton = document.createElement('button');
+        let boton = document.createElement('button');
         boton.setAttribute('id', id);
         boton.setAttribute('class', 'btn btn-outline-light');
         boton.setAttribute('type', 'button');
-        boton.setAttribute('onclick', 'location.href="' + direccion + '"');
+        boton.setAttribute('onclick', 'location.href=' + direccion );
         boton.textContent = texto;
 
         boton.style.backgroundColor = "white";
@@ -20,7 +20,7 @@ window.BotonFooter = {
         boton.style.width = "200px";
         boton.style.position = "absolute";
 
-        document.getelementById(parent).appendChild(boton);
+        document.getElementById(parent).appendChild(boton);
 
         return boton;
     }
