@@ -7,10 +7,6 @@ body{
     line-height: 1.5;
 }
 
-
-
-
-
 #ul-Libros{
     list-style: none;
     padding: 0;
@@ -21,5 +17,9 @@ body{
     align-items: center;
     align-content: center;
 
+}
+
+#ul-Libros li {
+    margin: 0 10px; /* Margen horizontal entre elementos */
 }
 

@@ -1,5 +1,5 @@
-window.RecuadroLibro = {
-    recuadro: function (titulo,autor,imagen,parent) {
+window.RecuadroLibroHistoria = {
+    recuadroHistoria: function (titulo,autor,imagen,parent) {
         let tituloLibro = document.createElement("h3");
         let autorLibro = document.createElement("h4");
         let imagenLibro = document.createElement("img");
@@ -18,7 +18,7 @@ window.RecuadroLibro = {
         imagenLibro.style.width = "200px";
         imagenLibro.style.height = "350px";
 
-        divLibro.style.height = "450px";
+        divLibro.style.height = "600px";
         divLibro.style.width = "300px";
         divLibro.style.backgroundColor = "white";
         divLibro.style.padding = "20px 0";
@@ -27,6 +27,8 @@ window.RecuadroLibro = {
         divLibro.style.border = "1px solid #2196F3";
         divLibro.style.marginLeft = "5%";
         divLibro.style.position = "relative";
+
+        window.BotonFooter.botonTransferencia("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
     
         document.getElementById(parent).appendChild(divLibro);
 
