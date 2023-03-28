@@ -18,6 +18,7 @@ window.BotonFooter = {
         boton.style.textAlign = "center";
         boton.style.height = "50px";
         boton.style.width = "200px";
+        boton.style.position = "relative";
 
         // Agregar regla CSS para el efecto hover
         boton.style.cursor = "pointer";

@@ -5,7 +5,7 @@ window.RecuadroLibroHistoria = {
         let imagenLibro = document.createElement("img");
         let divLibro = document.createElement("div");
 
-        divLibro.id = "divLibro";
+        divLibro.id = "divLibroHistoria";
 
         tituloLibro.innerHTML = titulo;
         autorLibro.innerHTML = autor;
@@ -18,7 +18,7 @@ window.RecuadroLibroHistoria = {
         imagenLibro.style.width = "200px";
         imagenLibro.style.height = "350px";
 
-        divLibro.style.height = "600px";
+        divLibro.style.height = "500px";
         divLibro.style.width = "300px";
         divLibro.style.backgroundColor = "white";
         divLibro.style.padding = "20px 0";
@@ -28,9 +28,10 @@ window.RecuadroLibroHistoria = {
         divLibro.style.marginLeft = "5%";
         divLibro.style.position = "relative";
 
+        document.getElementById(parent).appendChild(divLibro);
         window.BotonFooter.botonTransferencia("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
     
-        document.getElementById(parent).appendChild(divLibro);
+        
 
         return null;
     }
