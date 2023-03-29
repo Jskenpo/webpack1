@@ -1,0 +1,28 @@
+body{
+    background-color: #BBDEFB;
+    font-family: 'Century Gothic';
+    font-size: 14px;
+    color: #333;
+    padding: 0;
+    line-height: 1.5;
+}
+
+#imagenFigure{
+    height: 450px;
+    width: 600px;
+    position: relative;
+    
+
+
+}
+
+#texto{
+    height: 200px;
+    width: 600px;
+    position: relative;
+    padding: 0;
+    line-height: 1.5;
+    text-align: justify;
+    position: relative;
+    word-wrap: break-word;
+}

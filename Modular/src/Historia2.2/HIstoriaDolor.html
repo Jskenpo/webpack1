@@ -4,75 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HistoriaDolor.css" style="text/css">
     <title>HyM1</title>
 </head>
 <body>
+     
+   <div id="imagenFigure">
     
-
-    <br>    
-   <div>
-    <figure>
-        <img src="data:image/jpeg;base64,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" alt="">
-    </figure>
    </div>
-   <div>
-    <h3><i>Capítulo 2</i></h3>
-    <p>
-        Fue en una tarde que el mago paseando en el bosque la vista cruzó  y vió la más dulze mirada que en 
-        <br>
-        toda su vida jamás conoció, desde ese momento el mago supo que ese era su amor verdadero y dedicó todo 
-        <br>
-        su tiempo a conquistarla, el hada no se dejaba conquistar tan fácilmente, por lo que el mago
-        <br>
-        optó por mostrar su devoción completa por ella, y así fue como el mago y el hada se convirtieron en la 
-        <br>
-        mejor pareja de todo el bosque. Sin embargo el mal que siempre existió, personificado como un ente horrorifico
-        <br>
-        no soportó ver tanta felicidad entre dos seres,  y con su odió atacó hasta que el hadá cayó y el mago enfurecido 
-        <br>
-        se entabló una batalla épica en la que el mal fue derrotado.
-    </p>
+    <div id="divTitulo">
+     <h1>Capítulo 2</h1>
+    </div>
+
+   <div id="texto">
+    
    </div>
-   <div>
-        <p>
-            El hada, al ser atacada por el mal:
-            <br>
-            <br>
-
-            <b>Opción 1</b>
-
-            <br>
-            <br>
-        </p>
-        <a href="MuerteHada.html">El Hada, su amada, muere</a>
-        <p>
-            <br>
-            <br>
-            <b>Opción 2</b>
-            <br>
-            <br>
-        </p>
-        <a href="ViveHada.html">El Hada vive</a>
-        <br>
-
-
+   <div id="progreso">
         
-
-   </div>
-   <div>
-    <h3>Progreso</h3>
-
-        <progress value="50" max="100"></progress> 
-        <br>
-        <p>
-            <span>
-                50%
-            </span>
-        </p>
 
    </div>
 </body>
 <footer>
-    <a href="../Historia1.html">Regresar</a>
+    <div id="divBtnFooter">
+    
+    </div>
+    <script src="../Funciones/ProgressBar.js"></script>
+    <script src="../Funciones/imagenes_new.js"></script>
+    <script src="../Funciones/texto.js"></script>
+    <script src="../Funciones/HacerBoton.js"></script>
+    <script src="HistoriaDolor.js"></script>
+
 </footer>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "webpack1",
+  "version": "1.0.0",
+  "description": "creacion de webpack práctico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jskenpo/webpack1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jskenpo/webpack1/issues"
+  },
+  "homepage": "https://github.com/Jskenpo/webpack1#readme",
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  }
+}
