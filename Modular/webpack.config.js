@@ -1,6 +1,7 @@
 const path = requiere('path');
 const HtmlWebpackPlugin = requiere('html-webpack-plugin');
 
+
 module.exports = {
     entry: {
         Principal: './src/Principal/index.js',
