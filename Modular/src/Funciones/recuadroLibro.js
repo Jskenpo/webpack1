@@ -1,4 +1,4 @@
-export const recuadroHistoria = (titulo,autor,imagen,parent) => {
+export const recuadroLibro = (titulo,autor,imagen,parent) => {
     let tituloLibro = document.createElement("h3");
         let autorLibro = document.createElement("h4");
         let imagenLibro = document.createElement("img");

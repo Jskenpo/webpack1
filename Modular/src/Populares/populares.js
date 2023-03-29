@@ -1,6 +1,10 @@
 //agregar funcion recuadro 
-const seccion = window.RecuadroLibro.recuadro('Violeta','Isabel Allende','https://tienda.sophosenlinea.com/imagenes/9786073/978607380791.GIF','divIA','200px');
-const seccion2 = window.RecuadroLibro.recuadro('Roma soy yo','Santiago Posteguillo','https://tienda.sophosenlinea.com/imagenes/9788466/978846667178.GIF','divRSY','200px');
-const seccion3 = window.RecuadroLibro.recuadro('Caso de Alaska Sanders','Joel Dïckens','https://tienda.sophosenlinea.com/imagenes/9788420/978842046212.GIF','divCAS','200px');
-const buttonFooter = window.BotonFooter.botonTransferencia('Regresar', 'btnRegresar', '../Principal/index.html','divBtnRegresar' )
+import { recuadroLibro } from "../Funciones/recuadroLibro";
+import { HacerBoton } from "../Funciones/HacerBoton";
+
+
+recuadroLibro('Violeta','Isabel Allende','https://tienda.sophosenlinea.com/imagenes/9786073/978607380791.GIF','divIA','200px');
+recuadroLibro('Roma soy yo','Santiago Posteguillo','https://tienda.sophosenlinea.com/imagenes/9788466/978846667178.GIF','divRSY','200px');
+recuadroLibro('Caso de Alaska Sanders','Joel Dïckens','https://tienda.sophosenlinea.com/imagenes/9788420/978842046212.GIF','divCAS','200px');
+HacerBoton('Regresar', 'btnRegresar', '../Principal/index.html','divBtnRegresar' )
 
