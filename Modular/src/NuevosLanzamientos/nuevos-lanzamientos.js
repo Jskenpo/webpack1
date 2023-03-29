@@ -1,6 +1,6 @@
-import { recuadroLibro } from "../Funciones/recuadroLibro";
-import { HacerBoton } from "../Funciones/HacerBoton";
-import { recuadroHistoria } from "../Funciones/RecuadroHistoria";
+import { recuadroLibro } from "../Funciones/recuadroLibro.js";
+import { HacerBoton } from "../Funciones/HacerBoton.js";
+import { recuadroHistoria } from "../Funciones/RecuadroHistoria.js";
 
 
 

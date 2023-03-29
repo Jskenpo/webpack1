@@ -1,5 +1,5 @@
-import { GlowDiv } from "../Funciones/GlowDiv";
-import { newImagen1 } from "../Funciones/newImagen1";
+import { GlowDiv } from "../Funciones/GlowDiv.js";
+import { newImagen1 } from "../Funciones/imagenes_new.js";
 
 
 

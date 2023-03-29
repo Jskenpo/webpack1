@@ -1,3 +1,5 @@
+import { HacerBoton } from "./HacerBoton.js";
+
 
 export const recuadroHistoria = (titulo,autor,imagen,parent) => {
     let tituloLibro = document.createElement("h3");
@@ -29,7 +31,7 @@ export const recuadroHistoria = (titulo,autor,imagen,parent) => {
     divLibro.style.position = "relative";
 
     document.getElementById(parent).appendChild(divLibro);
-    botonTransferencia("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
+    HacerBoton("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
 
     return null;
 }
