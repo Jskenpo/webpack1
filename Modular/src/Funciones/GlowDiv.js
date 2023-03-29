@@ -1,6 +1,6 @@
-document.GlowDiv = {
-    newGlowDiv: function(divIngreso) {
-        let cuadro = document.getElementById(divIngreso);
+//arrow function 
+export const GlowDiv = (divIngreso) => {
+    let cuadro = document.getElementById(divIngreso);
 
         cuadro.addEventListener("mouseover", () => {
             cuadro.style.boxShadow = "0 0 10px 5px #f1f1f1";
@@ -13,5 +13,6 @@ document.GlowDiv = {
         );
 
         return null;
-    }
-}
+};
+
+

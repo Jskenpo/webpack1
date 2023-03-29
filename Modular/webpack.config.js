@@ -23,14 +23,41 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
+                
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Output Management',
-            template: './src/index.html',
+            template: './src/Principal/index.html',
             chunks: ['index']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Output Management',
+            template: './src/NuevosLanzamientos/nuevos-lanzamientos.html',
+            chunks: ['nuevos-lanzamientos']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Output Management',
+            template: './src/Populares/populares.html',
+            chunks: ['populares']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Output Management',
+            template: './src/Historia1/historia1.html',
+            chunks: ['historia1']
+        }),
+        new HtmlWebpackPlugin({ 
+            title: 'Output Management',
+            template: './src/Historia2.1/HistoriaAventura.html',
+            chunks: ['HistoriaAventura']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Output Management',
+            template: './src/Historia2.2/HistoriaDolor.html',
+            chunks: ['HistoriaDolor']
         })
+
     ]
 };

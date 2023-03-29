@@ -1,6 +1,7 @@
-window.BotonFooter = {
-    botonTransferencia: function (texto, id, direccion, parent) {
-        let boton = document.createElement('button');
+//hacer arrow function
+
+export const HacerBoton = (texto, id, direccion, parent) => {
+    let boton = document.createElement('button');
         boton.setAttribute('id', id);
         boton.setAttribute('class', 'btn btn-outline-light');
         boton.setAttribute('type', 'button');
@@ -40,5 +41,5 @@ window.BotonFooter = {
         document.getElementById(parent).appendChild(boton);
 
         return null;
-    }
+
 }

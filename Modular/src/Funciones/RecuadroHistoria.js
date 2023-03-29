@@ -1,38 +1,35 @@
-window.RecuadroLibroHistoria = {
-    recuadroHistoria: function (titulo,autor,imagen,parent) {
-        let tituloLibro = document.createElement("h3");
-        let autorLibro = document.createElement("h4");
-        let imagenLibro = document.createElement("img");
-        let divLibro = document.createElement("div");
 
-        divLibro.id = "divLibroHistoria";
+export const recuadroHistoria = (titulo,autor,imagen,parent) => {
+    let tituloLibro = document.createElement("h3");
+    let autorLibro = document.createElement("h4");
+    let imagenLibro = document.createElement("img");
+    let divLibro = document.createElement("div");
 
-        tituloLibro.innerHTML = titulo;
-        autorLibro.innerHTML = autor;
-        imagenLibro.src = imagen;
+    divLibro.id = "divLibroHistoria";
 
-        divLibro.appendChild(tituloLibro);
-        divLibro.appendChild(autorLibro);
-        divLibro.appendChild(imagenLibro);
+    tituloLibro.innerHTML = titulo;
+    autorLibro.innerHTML = autor;
+    imagenLibro.src = imagen;
 
-        imagenLibro.style.width = "200px";
-        imagenLibro.style.height = "350px";
+    divLibro.appendChild(tituloLibro);
+    divLibro.appendChild(autorLibro);
+    divLibro.appendChild(imagenLibro);
 
-        divLibro.style.height = "500px";
-        divLibro.style.width = "300px";
-        divLibro.style.backgroundColor = "white";
-        divLibro.style.padding = "20px 0";
-        divLibro.style.textAlign = "center";
-        divLibro.style.borderRadius = "16px";
-        divLibro.style.border = "1px solid #2196F3";
-        divLibro.style.marginLeft = "5%";
-        divLibro.style.position = "relative";
+    imagenLibro.style.width = "200px";
+    imagenLibro.style.height = "350px";
 
-        document.getElementById(parent).appendChild(divLibro);
-        window.BotonFooter.botonTransferencia("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
-    
-        
+    divLibro.style.height = "500px";
+    divLibro.style.width = "300px";
+    divLibro.style.backgroundColor = "white";
+    divLibro.style.padding = "20px 0";
+    divLibro.style.textAlign = "center";
+    divLibro.style.borderRadius = "16px";
+    divLibro.style.border = "1px solid #2196F3";
+    divLibro.style.marginLeft = "5%";
+    divLibro.style.position = "relative";
 
-        return null;
-    }
+    document.getElementById(parent).appendChild(divLibro);
+    botonTransferencia("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
+
+    return null;
 }

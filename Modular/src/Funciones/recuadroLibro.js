@@ -1,6 +1,5 @@
-window.RecuadroLibro = {
-    recuadro: function (titulo,autor,imagen,parent) {
-        let tituloLibro = document.createElement("h3");
+export const recuadroHistoria = (titulo,autor,imagen,parent) => {
+    let tituloLibro = document.createElement("h3");
         let autorLibro = document.createElement("h4");
         let imagenLibro = document.createElement("img");
         let divLibro = document.createElement("div");
@@ -31,5 +30,4 @@ window.RecuadroLibro = {
         document.getElementById(parent).appendChild(divLibro);
 
         return null;
-    }
 }
