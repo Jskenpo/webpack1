@@ -1,7 +1,7 @@
 import { newImagen1 } from "../Funciones/imagenes_new.js";
 import { HacerBoton } from "../Funciones/HacerBoton.js";
 import { texto } from "../Funciones/texto.js";
-import { progressBar } from "../Funciones/ProgressBar,js";
+import { progressBar } from "../Funciones/ProgressBar.js";
 
 
 newImagen1("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIuaeMyWGhRbQr5MLpE0-OnDIYCkiAONwe-g&usqp=CAU",'imagenFigure');
