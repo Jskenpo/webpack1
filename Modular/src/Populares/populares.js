@@ -1,6 +1,7 @@
 //agregar funcion recuadro 
 import { recuadroLibro } from "../Funciones/recuadroLibro.js";
 import { HacerBoton } from "../Funciones/HacerBoton.js";
+import '../Populares/libros-populares.scss'
 
 
 recuadroLibro('Violeta','Isabel Allende','https://tienda.sophosenlinea.com/imagenes/9786073/978607380791.GIF','divIA','200px');

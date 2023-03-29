@@ -1,10 +1,11 @@
-const path = requiere('path');
-const HtmlWebpackPlugin = requiere('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = {
     entry: {
-        Principal: './src/Principal/index.js',
+        Principal: './src/Principal/principal.js',
         NLanzamientos: './src/NuevosLanzamientos/nuevos-lanzamientos.js',
         Populares: './src/Populares/populares.js',
         Historia1: './src/Historia1/historia1.js',
@@ -13,17 +14,30 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'Dist')
     },
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.(png|jpe?g|gif)$/i,
                 use: [
-                    'style-loader',
-                    'css-loader'
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: '/src/Imagenes/',
+                            publicPath: '../src/Imagenes/'
+                        }
+                    }
                 ]
-                
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ]
             }
         ]
     },
@@ -40,12 +54,12 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Output Management',
-            template: './src/Populares/populares.html',
+            template: './src/Populares/libros-populares.html',
             chunks: ['populares']
         }),
         new HtmlWebpackPlugin({
             title: 'Output Management',
-            template: './src/Historia1/historia1.html',
+            template: './src/Historia1/Historia1.html',
             chunks: ['historia1']
         }),
         new HtmlWebpackPlugin({ 
@@ -57,6 +71,9 @@ module.exports = {
             title: 'Output Management',
             template: './src/Historia2.2/HistoriaDolor.html',
             chunks: ['HistoriaDolor']
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
         })
 
     ]

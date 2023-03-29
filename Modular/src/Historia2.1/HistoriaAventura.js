@@ -2,6 +2,7 @@ import { newImagen1 } from "../Funciones/imagenes_new.js";
 import { HacerBoton } from "../Funciones/HacerBoton.js";
 import { texto } from "../Funciones/texto.js";
 import { progressBar } from "../Funciones/ProgressBar.js";
+import '../Historia2.1/HistoriaAventura.scss';
 
 newImagen1("https://p4.wallpaperbetter.com/wallpaper/311/687/658/stairs-trees-fantasy-art-forest-wallpaper-preview.jpg",'imagenFigure');
 HacerBoton('Regresar', 'btnRegresar', '../Historia1/historia1.html','divBtnFooter' )

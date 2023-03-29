@@ -1,5 +1,6 @@
 import { GlowDiv } from "../Funciones/GlowDiv.js";
 import { newImagen1 } from "../Funciones/imagenes_new.js";
+import '../Principal/principal.scss';
 
 
 

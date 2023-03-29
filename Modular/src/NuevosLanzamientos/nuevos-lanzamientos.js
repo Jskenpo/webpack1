@@ -1,6 +1,7 @@
 import { recuadroLibro } from "../Funciones/recuadroLibro.js";
 import { HacerBoton } from "../Funciones/HacerBoton.js";
 import { recuadroHistoria } from "../Funciones/RecuadroHistoria.js";
+import '../NuevosLanzamientos/nuevos-lanzamientos.scss'
 
 
 
