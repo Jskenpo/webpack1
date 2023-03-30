@@ -1,7 +1,28 @@
 import { recuadroLibro } from "../Funciones/recuadroLibro.js";
 import { HacerBoton } from "../Funciones/HacerBoton.js";
 import { recuadroHistoria } from "../Funciones/RecuadroHistoria.js";
+import { tituloH1 } from "../Funciones/tituloH1.js";
+import { tituloH2 } from "../Funciones/tituloH2.js";
+import {crearListaElementosOL} from "../Funciones/ListaOL.js";
 import '../NuevosLanzamientos/nuevos-lanzamientos.scss'
+
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'nuevos-lanzamientos.css';
+link.type = 'text/css';
+document.head.appendChild(link);
+
+tituloH1('Nuevos lanzamientos','divTitulo');
+tituloH2('Libros más esperados para 2023','divSubtitulo');
+
+const elementos = [
+    { siglas: "CC" },
+    { siglas: "CCarter" },
+    { siglas: "MN" },
+    { nombre: "historia" },
+  ];
+  
+crearListaElementosOL("lista", elementos);
 
 
 
