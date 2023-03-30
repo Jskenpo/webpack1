@@ -25,14 +25,13 @@ const h2Texto = "Libros Populares";
 const aTexto = "Haz clic aquí para ir a la página";
 const aHref = "../Populares/libros-populares.html";
 const divId = "divimgLP";
+crearElementos(parent, h2Texto, aTexto, aHref, divId);
 
 const parent2 = document.getElementById("parent-element");
 const h2Texto2 = "Nuevos Lanzamientos";
 const aTexto2 = "Haz clic aquí para ir a la página";
 const aHref2 = "../NuevosLanzamientos/nuevos-lanzamientos.html";
 const divId2 = "divimgNL";
-
-crearElementos(parent, h2Texto, aTexto, aHref, divId);
 crearElementos(parent2, h2Texto2, aTexto2, aHref2, divId2);
 
 const imagen1 = newImagen1('https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop','divimgNL');
