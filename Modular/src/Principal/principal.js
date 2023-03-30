@@ -5,6 +5,7 @@ import { tituloh3 } from "../Funciones/tituloH3.js";
 import { tituloH1 } from "../Funciones/tituloH1.js";
 import '../Principal/principal.scss';
 
+
 //crear link para css
 const link = document.createElement("link");
 link.rel = "stylesheet";
@@ -20,14 +21,14 @@ const parentH3 = document.getElementById("Bienvenido");
 const textoH3 = "Bienvenidos a la librería y panadería del norte, aquí encontrarás todo lo que necesitas para tu hogar y para tu negocio.";
 tituloh3(textoH3, parentH3);
 
-const parent = document.getElementById("Libros_Populares");
+const parent = "Libros_Populares";
 const h2Texto = "Libros Populares";
 const aTexto = "Haz clic aquí para ir a la página";
 const aHref = "../Populares/libros-populares.html";
 const divId = "divimgLP";
 crearElementos(parent, h2Texto, aTexto, aHref, divId);
 
-const parent2 = document.getElementById("parent-element");
+const parent2 = "Nuevos_lanzamientos";
 const h2Texto2 = "Nuevos Lanzamientos";
 const aTexto2 = "Haz clic aquí para ir a la página";
 const aHref2 = "../NuevosLanzamientos/nuevos-lanzamientos.html";

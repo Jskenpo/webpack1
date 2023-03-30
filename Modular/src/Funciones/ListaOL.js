@@ -8,6 +8,7 @@ export const  crearListaElementosOL = (parentId, elementos) => {
     // itera sobre el array de elementos y crea un elemento li y un elemento div con id correspondiente para cada uno
     elementos.forEach((elemento) => {
       const li = document.createElement("li");
+      ol.id = 'ol-libros'
       ol.appendChild(li);
       
       const div = document.createElement("div");

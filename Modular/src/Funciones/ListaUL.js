@@ -3,6 +3,7 @@ export const crearListaLibros = (parentId, libros) => {
     
     // crea un elemento ul y lo agrega al elemento parent
     const ul = document.createElement("ul");
+    ul.id = 'ul-Libros'
     parent.appendChild(ul);
     
     // itera sobre el array de libros y crea un elemento li y un elemento div con id correspondiente para cada uno
