@@ -19,19 +19,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: '/src/Imagenes/',
-                            publicPath: '../src/Imagenes/'
-                        }
-                    }
-                ]
-            },
-            {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -44,8 +31,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Output Management',
-            template: './src/Principal/index.html',
-            chunks: ['index']
+            template: './src/Principal/principal.html',
+            chunks: ['principal']
         }),
         new HtmlWebpackPlugin({
             title: 'Output Management',
