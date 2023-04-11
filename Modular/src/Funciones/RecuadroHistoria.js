@@ -31,7 +31,7 @@ export const recuadroHistoria = (titulo,autor,imagen,parent) => {
     divLibro.style.position = "relative";
 
     document.getElementById(parent).appendChild(divLibro);
-    HacerBoton("Ver Libro", "boton-comprar", "../Historia1/Historia1.html", divLibro.id);
+    HacerBoton("Ver Libro", "boton-comprar", "Historia1.html", divLibro.id);
 
     return null;
 }

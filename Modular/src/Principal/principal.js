@@ -5,11 +5,11 @@ import { tituloh3 } from "../Funciones/tituloH3.js";
 import { tituloH1 } from "../Funciones/tituloH1.js";
 import '../Principal/principal.scss';
 
-// Agregamos la sintaxis de desestructuración privada en la importación
-import {
-  #divImgLP as divImgLP,
-  #divImgNL as divImgNL
-} from "../Funciones/privado.js";
+// Importamos el objeto con las propiedades privadas
+import privado from "../Funciones/privado.js";
+
+// Creamos alias para las propiedades privadas
+const { #divImgLP: divImgLP, #divImgNL: divImgNL } = privado;
 
 //crear link para css
 const link = document.createElement("link");
@@ -26,18 +26,18 @@ const parentH3 = document.getElementById("Bienvenido");
 const textoH3 = "Bienvenidos a la librería y panadería del norte, aquí encontrarás todo lo que necesitas para tu hogar y para tu negocio.";
 tituloh3(textoH3, parentH3);
 
-// Utilizamos la sintaxis de desestructuración privada para acceder a los elementos del objeto importado
+// Utilizamos las propiedades privadas
 const parent = divImgLP;
 const h2Texto = "Libros Populares";
 const aTexto = "Haz clic aquí para ir a la página";
-const aHref = "../Populares/libros-populares.html";
+const aHref = "libros-populares.html";
 const divId = "#divimgLP";
 crearElementos(parent, h2Texto, aTexto, aHref, divId);
 
 const parent2 = divImgNL;
 const h2Texto2 = "Nuevos Lanzamientos";
 const aTexto2 = "Haz clic aquí para ir a la página";
-const aHref2 = "../NuevosLanzamientos/nuevos-lanzamientos.html";
+const aHref2 = "nuevos-lanzamientos.html";
 const divId2 = "#divimgNL";
 crearElementos(parent2, h2Texto2, aTexto2, aHref2, divId2);
 
