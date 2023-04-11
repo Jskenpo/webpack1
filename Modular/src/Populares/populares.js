@@ -4,6 +4,7 @@ import { HacerBoton } from "../Funciones/HacerBoton.js";
 import { crearListaLibros } from "../Funciones/ListaUL.js";
 import { tituloH1 } from "../Funciones/tituloH1.js";
 import { tituloH2 } from "../Funciones/tituloH2.js";
+import '../Populares/libros-populares.scss';
 
 
 const link = document.createElement('link');
