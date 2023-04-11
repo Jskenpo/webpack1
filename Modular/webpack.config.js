@@ -14,7 +14,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'Dist')
+        path: path.resolve(__dirname, 'Dist_babel')
     },
     module: {
         rules: [
