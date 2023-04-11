@@ -28,5 +28,11 @@
     "sass-loader": "^13.2.2",
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2"
   }
 }
